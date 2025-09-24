@@ -15,9 +15,11 @@
     height: 100px;
 }
 #main-nav{
-    float: right;
-    width: 960px;
+    /* float: right; */
+    /* width: 960px; */
     
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .main_footer{
     width:100%; 
@@ -52,9 +54,9 @@
 }
 .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+
 }
 .item1{
     
@@ -71,11 +73,12 @@
 nav div a{
     border: 3px solid red;
 }
-@media(max-width:500px) {
+@media(min-width:700px) {
     nav div.container{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
 }
+
